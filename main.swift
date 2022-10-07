@@ -39,10 +39,5 @@ func sortSelectionAlt(arrayInpt:[String], _ debug: Bool) {
     }
 }
 
-let start = DispatchTime.now()
 sortSelectionAlt(arrayInpt: inptStrings(), false)
-let end = DispatchTime.now()
 
-let difference = end.uptimeNanoseconds - start.uptimeNanoseconds
-let runtime = Double(difference) / 1_000_000.0
-print("\(runtime) ms")
